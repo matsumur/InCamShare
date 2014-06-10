@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9.00"
+	Name="face_recognition"
+	RootNamespace="face_recognition"
+	Keyword="Win32Proj"
+	TargetFrameworkVersion="131072"
+	>
+	<Platforms>
+		<Platform Name="Win32" />
+		<Platform Name="x64" />
+	</Platforms>
+	<ToolFiles />
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="bin/$(PlatformName)/"
+			IntermediateDirectory="build/$(PlatformName)_$(ConfigurationName)/$(ProjectName)/"
+			ConfigurationType="1"
+			CharacterSet="1"
+			>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				AdditionalIncludeDirectories=".;include;res;../common/include;../../include;$(PCSDK_DIR)/include;$(PCSDK_DIR)/sample/common/include"
+				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE;_WIN32_WINNT=0x0600"
+				RuntimeLibrary="1"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				DebugInformationFormat="1"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories=".;include;res;../common/include;../../include;$(PCSDK_DIR)/include;$(PCSDK_DIR)/sample/common/include"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="libpxc_d.lib libpxcutils_d.lib "
+				OutputFile="$(OutDir)$(ProjectName)_d.exe"
+				ModuleDefinitionFile=""
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="../common/lib/$(PlatformName)/;../../lib/$(PlatformName);$(PCSDK_DIR)/lib/$(PlatformName);$(PCSDK_DIR)/sample/common/lib/$(PlatformName)/"
+				GenerateDebugInformation="true"
+
+				SubSystem="1"
+				LinkTimeCodeGeneration="0"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="$(OutDir)$(ProjectName)_d.exe"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Debug|x64"
+			OutputDirectory="bin/$(PlatformName)/"
+			IntermediateDirectory="build/$(PlatformName)_$(ConfigurationName)/$(ProjectName)/"
+			ConfigurationType="1"
+			CharacterSet="1"
+			>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				AdditionalIncludeDirectories=".;include;res;../common/include;../../include;$(PCSDK_DIR)/include;$(PCSDK_DIR)/sample/common/include"
+				PreprocessorDefinitions="WIN64;_DEBUG;_CONSOLE;_WIN64_WINNT=0x0600"
+				RuntimeLibrary="1"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				DebugInformationFormat="1"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories=".;include;res;../common/include;../../include;$(PCSDK_DIR)/include;$(PCSDK_DIR)/sample/common/include"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="libpxc_d.lib libpxcutils_d.lib "
+				OutputFile="$(OutDir)$(ProjectName)_d.exe"
+				ModuleDefinitionFile=""
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="../common/lib/$(PlatformName)/;../../lib/$(PlatformName);$(PCSDK_DIR)/lib/$(PlatformName);$(PCSDK_DIR)/sample/common/lib/$(PlatformName)/"
+				GenerateDebugInformation="true"
+				LinkTimeCodeGeneration="0"
+				SubSystem="1"
+				TargetMachine="17"
+			/>
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="$(OutDir)$(ProjectName)_d.exe"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="bin/$(PlatformName)/"
+			IntermediateDirectory="build/$(PlatformName)_$(ConfigurationName)/$(ProjectName)/"
+			ConfigurationType="1"
+			CharacterSet="1"
+			>
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories=".;include;res;../common/include;../../include;$(PCSDK_DIR)/include;$(PCSDK_DIR)/sample/common/include"
+				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE;_WIN32_WINNT=0x0600"
+				RuntimeLibrary="0"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				DebugInformationFormat="1"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories=".;include;res;../common/include;../../include;$(PCSDK_DIR)/include;$(PCSDK_DIR)/sample/common/include"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="libpxc.lib libpxcutils.lib "
+				OutputFile="$(OutDir)$(ProjectName).exe"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="../common/lib/$(PlatformName)/;../../lib/$(PlatformName);$(PCSDK_DIR)/lib/$(PlatformName);$(PCSDK_DIR)/sample/common/lib/$(PlatformName)/"
+				ModuleDefinitionFile=""
+				GenerateDebugInformation="true"
+				SubSystem="1"
+				LinkTimeCodeGeneration="0"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="$(OutDir)$(ProjectName).exe"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|x64"
+			OutputDirectory="bin/$(PlatformName)/"
+			IntermediateDirectory="build/$(PlatformName)_$(ConfigurationName)/$(ProjectName)/"
+			ConfigurationType="1"
+			CharacterSet="1"
+			>
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories=".;include;res;../common/include;../../include;$(PCSDK_DIR)/include;$(PCSDK_DIR)/sample/common/include"
+				PreprocessorDefinitions="WIN64;NDEBUG;_CONSOLE;_WIN64_WINNT=0x0600"
+				RuntimeLibrary="0"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				DebugInformationFormat="1"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories=".;include;res;../common/include;../../include;$(PCSDK_DIR)/include;$(PCSDK_DIR)/sample/common/include"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="libpxc.lib libpxcutils.lib "
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="../common/lib/$(PlatformName)/;../../lib/$(PlatformName);$(PCSDK_DIR)/lib/$(PlatformName);$(PCSDK_DIR)/sample/common/lib/$(PlatformName)/"
+				ModuleDefinitionFile=""
+				OutputFile="$(OutDir)$(ProjectName).exe"
+				GenerateDebugInformation="true"
+				SubSystem="1"
+				LinkTimeCodeGeneration="0"
+				TargetMachine="17"
+			/>
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile="$(OutDir)$(ProjectName).exe"
+			/>
+		</Configuration>
+	</Configurations>
+	<References />
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			>
+			<File	RelativePath="src\face_recognition.cpp"  />
+			<File	RelativePath="..\common\src\face_render.cpp"  />
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			>
+			<File	RelativePath="..\common\include\face_render.h"  />
+			<File	RelativePath="..\common\include\util_cmdline.h"  />
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="rc"
+			>
+		</Filter>
+	</Files>
+	<Globals />
+</VisualStudioProject>
